@@ -7,22 +7,22 @@ import { Routes } from '@angular/router';
 
 // Definição das rotas
 export const routes: Routes = [
-  { path: '', component: LoginComponent },  // Rota padrão (vazia) que carrega o LoginComponent
-  { path: '**', redirectTo: '' }  // Qualquer rota não reconhecida será redirecionada para a rota padrão
+  { path: '', component: LoginComponent },  
+  { path: '**', redirectTo: '' }  
 ];
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent // Remover o AppComponent e deixar apenas o LoginComponent
+    LoginComponent 
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [LoginComponent] // Defina o LoginComponent como o bootstrap (componente inicial)
+  bootstrap: [LoginComponent] 
 })
 
 
